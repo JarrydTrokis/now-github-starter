@@ -1,1 +1,7 @@
-{}
+{
+  "version": 2,
+  "builds": [
+    { "src": "data.js", "use": "@now/node" },
+    { "src": "index.html", "use": "@now/static" }
+  ]
+}
