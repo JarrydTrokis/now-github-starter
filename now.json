@@ -1,7 +1,10 @@
 {
   "version": 2,
   "builds": [
-    { "src": "data.js", "use": "@now/node" },
-    { "src": "index.html", "use": "@now/static" }
+    { "src": "api/*.js", "use": "@now/node" },
+    { "src": "*.html", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/api", "dest": "/data.js" }
   ]
 }
